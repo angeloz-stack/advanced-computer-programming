@@ -6,7 +6,7 @@
 - [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
 - [Java 11 or newer](https://www.java.com/en/download/help/download_options.html)
 
-### Creating the python virtual enviroment
+### Creating the python virtual environment
 ```
 conda create -n advanced-computer-programming python=3.11
 conda activate advanced-computer-programming
