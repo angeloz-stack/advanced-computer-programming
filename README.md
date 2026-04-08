@@ -1,19 +1,21 @@
 # Advanced Computer Programming
 
+## 🇬🇧 English
+
 ## Setup
 
 ### Requirements
-- [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 - [Java 11 or newer](https://www.java.com/en/download/help/download_options.html)
 
-### Creating the python virtual environment
-```
-conda create -n advanced-computer-programming python=3.11
-conda activate advanced-computer-programming
-pip install notebook ipykernel jupyter-client 
+### Creating the Python virtual environment
+```bash
+# Make sure to have Python 3.13 installed (e.g. via pyenv or uv)
+uv sync
 ```
 
-### Installing the Java kernel for jupyter notebook
+### Installing the Java kernel for Jupyter Notebook
+
 1. Download [JJava](https://github.com/dflib/jjava): go to [GitHub releases](https://github.com/dflib/jjava/releases), pick the latest version (or a specific one that you need) and under the "Assets" section download a file called `jjava-${version}-kernelspec.zip`
 2. Unzip the file into a temporary location
 3. Run the following commands from the parent directory that contains the unzipped kernel folder
@@ -23,11 +25,49 @@ jupyter kernelspec install jjava-${version}-kernelspec --user --name=java
 ```
 
 ### Verify installation
-
 ```bash
 jupyter kernelspec list
 ```
+
 The output should be something like this:
+```
+Available kernels:
+  python3    /home/angelo/miniconda3/envs/advanced-computer-programming/share/jupyter/kernels/python3
+  java       /home/angelo/.local/share/jupyter/kernels/java
+```
+
+---
+
+## 🇮🇹 Italiano
+
+## Configurazione
+
+### Requisiti
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
+- [Java 11 o versione successiva](https://www.java.com/en/download/help/download_options.html)
+
+### Creazione dell'ambiente virtuale Python
+```bash
+# Assicurarsi di avere Python 3.13 installato (ad esempio tramite pyenv o uv)
+uv sync
+```
+
+### Installazione del kernel Java per Jupyter Notebook
+
+1. Scaricare [JJava](https://github.com/dflib/jjava): andare alla pagina delle [release su GitHub](https://github.com/dflib/jjava/releases), scegliere la versione più recente (o una specifica, se necessario) e nella sezione "Assets" scaricare il file `jjava-${version}-kernelspec.zip`
+2. Estrarre il file in una posizione temporanea
+3. Eseguire i seguenti comandi dalla directory padre che contiene la cartella del kernel decompressa
+
+```bash
+jupyter kernelspec install jjava-${version}-kernelspec --user --name=java
+```
+
+### Verifica dell'installazione
+```bash
+jupyter kernelspec list
+```
+
+L'output dovrebbe essere simile a questo:
 ```
 Available kernels:
   python3    /home/angelo/miniconda3/envs/advanced-computer-programming/share/jupyter/kernels/python3
