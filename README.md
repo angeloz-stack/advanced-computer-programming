@@ -21,18 +21,18 @@ uv sync
 3. Run the following commands from the parent directory that contains the unzipped kernel folder
 
 ```bash
-jupyter kernelspec install jjava-${version}-kernelspec --user --name=java
+uv run jupyter kernelspec install jjava-${version}-kernelspec --user --name=java
 ```
 
 ### Verify installation
 ```bash
-jupyter kernelspec list
+uv run jupyter kernelspec list
 ```
 
 The output should be something like this:
 ```
 Available kernels:
-  python3    /home/angelo/miniconda3/envs/advanced-computer-programming/share/jupyter/kernels/python3
+  python3    path/to/advanced-computer-programming/.venv/share/jupyter/kernels/python3
   java       /home/angelo/.local/share/jupyter/kernels/java
 ```
 
@@ -59,17 +59,17 @@ uv sync
 3. Eseguire i seguenti comandi dalla directory padre che contiene la cartella del kernel decompressa
 
 ```bash
-jupyter kernelspec install jjava-${version}-kernelspec --user --name=java
+uv run jupyter kernelspec install jjava-${version}-kernelspec --user --name=java
 ```
 
 ### Verifica dell'installazione
 ```bash
-jupyter kernelspec list
+uv run jupyter kernelspec list
 ```
 
 L'output dovrebbe essere simile a questo:
 ```
 Available kernels:
-  python3    /home/angelo/miniconda3/envs/advanced-computer-programming/share/jupyter/kernels/python3
+  python3    path/to/advanced-computer-programming/.venv/share/jupyter/kernels/python3
   java       /home/angelo/.local/share/jupyter/kernels/java
 ```
