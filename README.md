@@ -1,5 +1,9 @@
 # Advanced Computer Programming
 
+Docente: [Raffaele Della Corte](https://www.docenti.unina.it/raffaele.dellacorte2)
+Lingua del corso: Italiano
+Anno accademico: 2025/2026
+
 ## 🇬🇧 English
 
 ## Setup
