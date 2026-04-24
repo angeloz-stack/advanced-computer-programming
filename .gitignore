@@ -16,6 +16,8 @@ out/
 *.iml
 .vscode/
 
+/assets
+
 .DS_Store
 Thumbs.db
 
