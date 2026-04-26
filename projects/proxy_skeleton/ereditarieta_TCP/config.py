@@ -1,0 +1,5 @@
+BUFFER_SIZE = 1024
+BACKLOG = 30
+QUEUE_SIZE = 5
+REQUESTS_PER_THREAD = 3
+ARTICLES = ["laptop", "smartphone"]
