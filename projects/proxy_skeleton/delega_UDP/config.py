@@ -1,0 +1,4 @@
+BUFFER_SIZE = 1024
+QUEUE_SIZE = 5
+REQUESTS_PER_THREAD = 3
+ARTICLES = ["laptop", "smartphone"]
