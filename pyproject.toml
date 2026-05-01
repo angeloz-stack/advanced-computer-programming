@@ -9,6 +9,7 @@ dependencies = [
     "grpcio-tools>=1.80.0",
     "loguru>=0.7.3",
     "multiprocess>=0.70.19",
+    "stomp-py>=8.2.0",
 ]
 
 [dependency-groups]
