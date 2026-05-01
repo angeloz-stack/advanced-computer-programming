@@ -38,7 +38,7 @@ class Greeter(helloworld_pb2_grpc.GreeterServicer):
 
 def serve():
 	# definisco il porto
-	port = "50051"
+	port = "5001"
 
 	# mi istanzio un oggetto server da grpc
 	# ALERT: i ThreadPool sono quelli del package concurrent e non multiprocess. Alcune diff in: https://stackoverflow.com/questions/20776189/concurrent-futures-vs-multiprocessing-in-python-3
@@ -48,6 +48,7 @@ def serve():
 	helloworld_pb2_grpc.add_GreeterServicer_to_server(Greeter(), server)
 
 	# faccio il bind al porto impostato
+	# [::] è 0.0.0.0 (tutte le interfacce)
 	server.add_insecure_port("[::]:" + port)
 
 	# avvio il server

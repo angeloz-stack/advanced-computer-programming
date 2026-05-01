@@ -8,7 +8,7 @@ from concurrent import futures
 import helloworld_pb2_grpc
 import helloworld_pb2
 
-PORT = "5001"
+PORT = 5001
 
 # La classe Greeter eredita da GreeterServicer, e in questo caso implementiamo
 # il metodo SayHello

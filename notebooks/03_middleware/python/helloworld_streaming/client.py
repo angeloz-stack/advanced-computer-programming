@@ -2,7 +2,7 @@ import grpc
 import helloworld_pb2
 import helloworld_pb2_grpc
 
-PORT = "5001"
+PORT = 5001
 
 def generate_requests():
 
@@ -34,8 +34,6 @@ def run():
 		# Bi-directional streaming
 		for response in stub.SayHello_v3(generate_requests()):
 			print("[CLIENT] SayHello invoked Greeter client received: " + response.message)
-
-
-			
+		
 if __name__ == "__main__":
 	run()
