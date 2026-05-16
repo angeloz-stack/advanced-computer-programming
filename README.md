@@ -13,7 +13,7 @@ Anno accademico: 2025/2026
 ### Requisiti
 - [uv](https://docs.astral.sh/uv/getting-started/installation/)
 - [Java 11 o versione successiva](https://www.java.com/en/download/help/download_options.html)
-- [Estensione VSCode](https://marketplace.visualstudio.com/items?itemName=purocean.drawio-preview) per visualizzare gli schemi drawio; in alternativa, possono essere aperti nella [webapp](https://www.drawio.com/)
+- [Estensione VSCode](https://marketplace.visualstudio.com/items?itemName=purocean.drawio-preview) per visualizzare gli schemi drawio; in alternativa, possono essere aperti nella [webapp](https://www.drawio.com/).
 
 ### Creazione dell'ambiente virtuale Python
 ```bash
