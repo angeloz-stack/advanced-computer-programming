@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Pagina-1" id="zAToXpuvA_BWhVCYu7Jq">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-6" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ZUlJvAUrc2hmSgbO1ilj-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="gRPC" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-28" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="client" vertex="1">
+          <mxGeometry height="60" width="120" x="112.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-57" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="server" vertex="1">
+          <mxGeometry height="60" width="120" x="1038.5" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-9" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-11" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-5" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=14;" value="python -m grpc_tools.protoc [...]" vertex="1">
+          <mxGeometry height="60" width="283" x="272.5" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-7" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;" value="&lt;div style=&quot;color: rgb(32, 32, 32); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, monospace; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(5, 80, 174);&quot;&gt;&lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;_pb2.py&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="72.5" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-8" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;" value="&lt;div style=&quot;color: rgb(32, 32, 32); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, monospace; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(5, 80, 174);&quot;&gt;&lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;_pb2_grpc.py&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="230" x="983.5" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-12" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-7" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZUlJvAUrc2hmSgbO1ilj-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="450" as="sourcePoint" />
+            <mxPoint x="160" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-13" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-8" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZUlJvAUrc2hmSgbO1ilj-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="490" as="sourcePoint" />
+            <mxPoint x="240" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-17" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-8" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ZUlJvAUrc2hmSgbO1ilj-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1098" y="425" as="sourcePoint" />
+            <mxPoint x="1098" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="Stub" vertex="1">
+          <mxGeometry height="30" width="60" x="850" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="serializer / deserializer" vertex="1">
+          <mxGeometry height="30" width="60" x="100" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="Servicer" vertex="1">
+          <mxGeometry height="30" width="60" x="1098.5" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-24" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-7" style="endArrow=classic;html=1;rounded=0;entryX=0.554;entryY=0.034;entryDx=0;entryDy=0;entryPerimeter=0;" target="ZUlJvAUrc2hmSgbO1ilj-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="420" as="sourcePoint" />
+            <mxPoint x="170" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="serializer / deserializer" vertex="1">
+          <mxGeometry height="30" width="60" x="420" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="with grpc.insecure_channel(address) as channel:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;stub = &lt;b&gt;s&lt;/b&gt;&lt;i&gt;&lt;b&gt;ervice&lt;/b&gt;&lt;/i&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;ServiceStub&lt;/i&gt;&lt;/b&gt;(channel)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;stub.&lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="367.5" x="-11.25" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-34" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;" value="&lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;.proto file" vertex="1">
+          <mxGeometry height="100" width="114" x="357" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-35" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-34" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="ZUlJvAUrc2hmSgbO1ilj-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="90" as="sourcePoint" />
+            <mxPoint x="560" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-36" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;legacyAnchorPoints=0;" value="" vertex="1">
+          <mxGeometry height="120" width="20" x="480" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="Supponiamo che qui sia definito un servizio &lt;b&gt;&lt;i&gt;Service&lt;/i&gt;&lt;/b&gt; e un certo metodo (rpc)&amp;nbsp;&lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="511.63" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-55" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="300" width="1403" x="397" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-32" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;" value="" vertex="1">
+          <mxGeometry height="300" width="1403" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-45" edge="1" parent="ZUlJvAUrc2hmSgbO1ilj-55" source="ZUlJvAUrc2hmSgbO1ilj-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-46" edge="1" parent="ZUlJvAUrc2hmSgbO1ilj-55" source="ZUlJvAUrc2hmSgbO1ilj-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-47" edge="1" parent="ZUlJvAUrc2hmSgbO1ilj-55" source="ZUlJvAUrc2hmSgbO1ilj-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-48" edge="1" parent="ZUlJvAUrc2hmSgbO1ilj-55" source="ZUlJvAUrc2hmSgbO1ilj-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-29" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=center;spacingLeft=5;fillColor=#fff2cc;spacingBottom=-17;strokeColor=#d6b656;gradientColor=default;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;class &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;i&gt;MyService&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;(service_pb2_grpc.Servicer):&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="313.25" x="544.88" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-33" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, request, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;return&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="43" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-41" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, request, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;yield&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="373" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-42" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, &lt;b&gt;request_iterator&lt;/b&gt;, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return ...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="301.38" x="693" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-43" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, &lt;b&gt;request_iterator&lt;/b&gt;, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;yield&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="301.38" x="1063" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-49" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;fontStyle=1;labelBackgroundColor=none;labelBorderColor=default;" value="Unary" vertex="1">
+          <mxGeometry height="30" width="60" x="133" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-51" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;fontStyle=1;labelBackgroundColor=none;labelBorderColor=default;" value="Server streaming" vertex="1">
+          <mxGeometry height="30" width="200" x="398" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-52" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;fontStyle=1;labelBackgroundColor=none;labelBorderColor=default;" value="Client streaming" vertex="1">
+          <mxGeometry height="30" width="200" x="743.69" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-53" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=22;fontStyle=1;labelBackgroundColor=none;labelBorderColor=default;" value="Bidirectional streaming" vertex="1">
+          <mxGeometry height="30" width="259.31" x="1084.04" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-58" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout;fontSize=14;" value="la firma e il ritorno del metodo varia in base al tipo di rpc usata" vertex="1">
+          <mxGeometry height="150" width="170" x="1170" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-60" edge="1" parent="1" source="ZUlJvAUrc2hmSgbO1ilj-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ZUlJvAUrc2hmSgbO1ilj-62">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1098.4615384615386" y="1160.0000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="server = grpc.server(futures.ThreadPoolExecutor(max_workers=10)) &lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;add_ServiceServicer_to_server&lt;/i&gt;&lt;/b&gt;(&lt;b&gt;&lt;i&gt;MyService&lt;/i&gt;&lt;/b&gt;(), server)&lt;br&gt;&lt;br&gt;port = server.add_insecure_port(&quot;[::]:&quot; + port)&lt;br&gt;&lt;br&gt;server.start()&lt;br&gt;server.wait_for_termination()" vertex="1">
+          <mxGeometry height="160" width="471.5" x="862.75" y="1140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
