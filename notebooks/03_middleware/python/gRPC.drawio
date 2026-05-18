@@ -73,8 +73,8 @@
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="serializer / deserializer" vertex="1">
           <mxGeometry height="30" width="60" x="420" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="with grpc.insecure_channel(address) as channel:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;stub = &lt;b&gt;s&lt;/b&gt;&lt;i&gt;&lt;b&gt;ervice&lt;/b&gt;&lt;/i&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;ServiceStub&lt;/i&gt;&lt;/b&gt;(channel)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;stub.&lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="367.5" x="-11.25" y="620" as="geometry" />
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="&lt;div&gt;address = f&quot;localhost:{port}&quot;&lt;/div&gt;with grpc.insecure_channel(address) as channel:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;stub = &lt;b&gt;s&lt;/b&gt;&lt;i&gt;&lt;b&gt;ervice&lt;/b&gt;&lt;/i&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;ServiceStub&lt;/i&gt;&lt;/b&gt;(channel)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;bar : Bar&amp;nbsp;= stub.&lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(foo : Foo) # oppure gli passi foo_iterator se streaming lato client&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;# for bar in stub.Method(foo) se streaming lato server&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="391.25" x="-23.12" y="620" as="geometry" />
         </mxCell>
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-34" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;" value="&lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;.proto file" vertex="1">
           <mxGeometry height="100" width="114" x="357" y="-140" as="geometry" />
@@ -109,7 +109,7 @@
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-48" edge="1" parent="ZUlJvAUrc2hmSgbO1ilj-55" source="ZUlJvAUrc2hmSgbO1ilj-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ZUlJvAUrc2hmSgbO1ilj-43">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-29" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=center;spacingLeft=5;fillColor=#fff2cc;spacingBottom=-17;strokeColor=#d6b656;gradientColor=default;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;class &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;i&gt;MyService&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;(service_pb2_grpc.Servicer):&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-29" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=center;spacingLeft=5;fillColor=#fff2cc;spacingBottom=-17;strokeColor=#d6b656;gradientColor=default;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;class &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;i&gt;MyServicer&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;(service_pb2_grpc.Servicer):&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="313.25" x="544.88" y="30" as="geometry" />
         </mxCell>
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-33" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, request, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;return&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
@@ -118,7 +118,7 @@
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-41" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, request, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;yield&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="250" x="373" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-42" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, &lt;b&gt;request_iterator&lt;/b&gt;, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;return ...&lt;/div&gt;" vertex="1">
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-42" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, &lt;b&gt;request_iterator&lt;/b&gt;, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;return&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="301.38" x="693" y="150" as="geometry" />
         </mxCell>
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-43" parent="ZUlJvAUrc2hmSgbO1ilj-55" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;spacingBottom=-5;" value="&lt;div style=&quot;&quot;&gt;def &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(self, &lt;b&gt;request_iterator&lt;/b&gt;, context):&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;[...]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;yield&lt;/b&gt; ...&lt;/div&gt;" vertex="1">
@@ -144,8 +144,27 @@
             <mxPoint x="1098.4615384615386" y="1160.0000000000005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="server = grpc.server(futures.ThreadPoolExecutor(max_workers=10)) &lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;add_ServiceServicer_to_server&lt;/i&gt;&lt;/b&gt;(&lt;b&gt;&lt;i&gt;MyService&lt;/i&gt;&lt;/b&gt;(), server)&lt;br&gt;&lt;br&gt;port = server.add_insecure_port(&quot;[::]:&quot; + port)&lt;br&gt;&lt;br&gt;server.start()&lt;br&gt;server.wait_for_termination()" vertex="1">
+        <mxCell id="ZUlJvAUrc2hmSgbO1ilj-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="server = grpc.server(futures.ThreadPoolExecutor(max_workers=10)) &lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;add_ServiceServicer_to_server&lt;/i&gt;&lt;/b&gt;(&lt;b&gt;&lt;i&gt;MyService&lt;/i&gt;&lt;/b&gt;(), server)&lt;br&gt;&lt;br&gt;address = f&quot;localhost:0&quot;&lt;br&gt;port = server.add_insecure_port(address)&lt;br&gt;&lt;br&gt;server.start()&lt;br&gt;server.wait_for_termination()" vertex="1">
           <mxGeometry height="160" width="471.5" x="862.75" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="4nubVE6BlPgOcLC-mXyT-1" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;spacingRight=0;spacingLeft=15;" value="syntax = &quot;proto3&quot;&lt;div&gt;package = &quot;test&quot;&lt;/div&gt;&lt;div&gt;service &lt;b style=&quot;font-style: italic;&quot;&gt;Service&lt;/b&gt;{&lt;/div&gt;&lt;div&gt;rpc &lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;( &lt;i&gt;(stream)&lt;/i&gt; Foo) returns &lt;i&gt;(stream)&lt;/i&gt; Bar&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135" width="353.5" x="736.5" y="-157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4nubVE6BlPgOcLC-mXyT-2" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;legacyAnchorPoints=0;rotation=-180;" value="" vertex="1">
+          <mxGeometry height="135" width="30" x="690" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="4nubVE6BlPgOcLC-mXyT-6" edge="1" parent="1" source="4nubVE6BlPgOcLC-mXyT-1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=353.5;exitDy=82.5;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;curved=1;entryX=0.5;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;" target="ZUlJvAUrc2hmSgbO1ilj-58" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="-75" />
+              <mxPoint x="1320" y="557" />
+            </Array>
+            <mxPoint x="990" y="210" as="sourcePoint" />
+            <mxPoint x="1260" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4nubVE6BlPgOcLC-mXyT-7" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout;fontSize=14;spacingLeft=10;spacingRight=10;" value="la chiamata e il ritorno del metodo varia in base al tipo di rpc usata" vertex="1">
+          <mxGeometry height="170" width="190" x="370" y="500" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

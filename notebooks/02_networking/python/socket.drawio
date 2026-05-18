@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" version="29.1.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0">
   <diagram name="Pagina-1" id="AOVeD8fuezYmy2qPOm2c">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -67,7 +67,7 @@
         <mxCell id="ecTTvontJ3zy0z3_LbMG-19" parent="1" style="whiteSpace=wrap;html=1;rounded=1;spacing=2;align=left;fontSize=14;spacingLeft=5;spacingRight=5;" value="&lt;div&gt;&lt;font&gt;s = socket.socket(socket_type=socket.AF_INET, socket_family=socket.SOCK_DGRAM)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;s.sendto(message=(&quot;Hello World!&quot;).encode(&quot;utf-8&quot;), address = (ip, port))&lt;/div&gt;&lt;div&gt;response, address = s.recvfrom(bufsize=1024)&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="565" x="760" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="ecTTvontJ3zy0z3_LbMG-21" parent="1" style="whiteSpace=wrap;html=1;rounded=1;spacing=2;align=left;fontSize=14;spacingLeft=5;spacingRight=5;" value="&lt;div&gt;&lt;font&gt;s = socket.socket(socket_type=socket.AF_INET, socket_family=socket.SOCK_DGRAM)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;s.bind(address = (ip, port))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;data, addr = s.recvfrom(bufsize = 1024)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;response = s.sendto(message=(&quot;Hello You!&quot;).encode(&quot;utf-8&quot;), address = addr)&lt;/div&gt;" vertex="1">
+        <mxCell id="ecTTvontJ3zy0z3_LbMG-21" parent="1" style="whiteSpace=wrap;html=1;rounded=1;spacing=2;align=left;fontSize=14;spacingLeft=5;spacingRight=5;" value="&lt;div&gt;&lt;font&gt;s = socket.socket(socket_type=socket.AF_INET, socket_family=socket.SOCK_DGRAM)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;s.bind(address = (ip, port))&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;response, addr = s.recvfrom(bufsize = 1024)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;s.sendto(message=(&quot;Hello You!&quot;).encode(&quot;utf-8&quot;), address = addr)&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="565" x="1470" y="450" as="geometry" />
         </mxCell>
         <mxCell id="ecTTvontJ3zy0z3_LbMG-23" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fontSize=14;" value="&lt;b&gt;client tcp&lt;/b&gt;" vertex="1">
