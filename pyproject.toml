@@ -9,7 +9,9 @@ dependencies = [
     "grpcio>=1.80.0",
     "grpcio-tools>=1.80.0",
     "loguru>=0.7.3",
+    "mongomock>=4.3.0",
     "multiprocess>=0.70.19",
+    "pymongo>=4.17.0",
     "stomp-py>=8.2.0",
 ]
 
