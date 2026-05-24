@@ -12,6 +12,7 @@ dependencies = [
     "mongomock>=4.3.0",
     "multiprocess>=0.70.19",
     "pymongo>=4.17.0",
+    "requests>=2.34.2",
     "stomp-py>=8.2.0",
 ]
 
