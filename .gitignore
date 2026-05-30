@@ -20,5 +20,6 @@ out/
 
 .DS_Store
 Thumbs.db
+*.drawio.bkp
 
 !.gitkeep
