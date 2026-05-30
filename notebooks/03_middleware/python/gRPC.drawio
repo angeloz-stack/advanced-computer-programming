@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="Electron">
   <diagram name="Pagina-1" id="zAToXpuvA_BWhVCYu7Jq">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1833" dy="1839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -74,7 +74,7 @@
           <mxGeometry height="30" width="60" x="420" y="350" as="geometry" />
         </mxCell>
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;spacingLeft=5;" value="&lt;div&gt;address = f&quot;localhost:{port}&quot;&lt;/div&gt;with grpc.insecure_channel(address) as channel:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;stub = &lt;b&gt;s&lt;/b&gt;&lt;i&gt;&lt;b&gt;ervice&lt;/b&gt;&lt;/i&gt;_pb2_grpc.&lt;b&gt;&lt;i&gt;ServiceStub&lt;/i&gt;&lt;/b&gt;(channel)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;bar : Bar&amp;nbsp;= stub.&lt;b&gt;&lt;i&gt;Method&lt;/i&gt;&lt;/b&gt;(foo : Foo) # oppure gli passi foo_iterator se streaming lato client&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;# for bar in stub.Method(foo) se streaming lato server&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="160" width="391.25" x="-23.12" y="620" as="geometry" />
+          <mxGeometry height="160" width="600" x="-243" y="620" as="geometry" />
         </mxCell>
         <mxCell id="ZUlJvAUrc2hmSgbO1ilj-34" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;" value="&lt;b&gt;&lt;i&gt;service&lt;/i&gt;&lt;/b&gt;.proto file" vertex="1">
           <mxGeometry height="100" width="114" x="357" y="-140" as="geometry" />
