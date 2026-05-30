@@ -7,6 +7,17 @@ import service_pb2
 import service_pb2_grpc
 
 class Servicer(service_pb2_grpc.ServiceServicer):
+    ##############################################################
+    # Non servono condition variable: mp.Queue è già thread/process-safe
+    # e bloccante (put/get attendono da soli su coda piena/vuota).
+    # I due lock servono solo a rendere atomica la coppia
+    # (put|get + logging.info), così i log restano coerenti tra
+    # thread concorrenti. Sono distinti — uno per i produttori e uno
+    # per i consumatori — per permettere a un produttore e un
+    # consumatore di lavorare in parallelo; un unico lock li
+    # serializzerebbe inutilmente. In `svuota` si prendono entrambi
+    # perché l'operazione drena la coda e va isolata da tutti gli altri.
+    ##############################################################
     def __init__(self, queue, lock_prod, lock_cons):
         self.queue = queue
         self.lock_prod = lock_prod
