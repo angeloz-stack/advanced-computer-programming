@@ -24,7 +24,7 @@ class Proxy(IMagazzino):
 
             s.send(data.encode("utf-8"))
 
-            response = s.recv(self.buf_size)
+            response = s.recv(self.buf_size).decode("utf-8")
 
             #log
 
@@ -44,6 +44,6 @@ class Proxy(IMagazzino):
 
             s.send(data.encode("utf-8"))
 
-            response = s.recv(self.buf_size)
+            response = s.recv(self.buf_size).decode("utf-8")
 
             return int(response)

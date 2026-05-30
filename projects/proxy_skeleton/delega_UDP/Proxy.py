@@ -24,6 +24,7 @@ class Proxy(IMagazzino):
             s.sendto(data.encode("utf-8"), addr)
 
             response, _ = s.recvfrom(self.buf_size)
+            response = response.decode("utf-8")
 
             return False if response == "ERROR" else True
 
@@ -41,5 +42,6 @@ class Proxy(IMagazzino):
             s.sendto(data.encode("utf-8"), addr)
 
             response, _ = s.recvfrom(self.buf_size)
+            response = response.decode("utf-8")
 
             return int(response)
