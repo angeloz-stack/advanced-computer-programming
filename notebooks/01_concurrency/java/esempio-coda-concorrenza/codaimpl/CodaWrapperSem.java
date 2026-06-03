@@ -18,7 +18,6 @@ public class CodaWrapperSem extends CodaWrapper {
 		elemDisp  = new Semaphore ( 0 ) ;
 	}
 	
-	
 	public void inserisci( int i){
 		
 		try{	
@@ -34,9 +33,7 @@ public class CodaWrapperSem extends CodaWrapper {
 		}catch ( InterruptedException e ){
 			e.printStackTrace();
 		}
-		
 	}
-	
 	
 	public int preleva(){
 		
@@ -55,9 +52,6 @@ public class CodaWrapperSem extends CodaWrapper {
 		}catch ( InterruptedException e ){
 			e.printStackTrace();
 		}
-		
 		return x;
 	}
-	
-	
 }
