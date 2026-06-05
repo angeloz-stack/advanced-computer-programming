@@ -17,6 +17,7 @@ out/
 .vscode/
 
 /assets
+*.txt
 
 .DS_Store
 Thumbs.db
