@@ -30,22 +30,22 @@ public class SkeletonThread extends Thread{
             DataInputStream input = new DataInputStream(new BufferedInputStream(conn.getInputStream()));
             DataOutputStream output = new DataOutputStream(new BufferedOutputStream(conn.getOutputStream()))
         ) {
-            String cmd = input.readUTF();
-            System.out.println(String.format("[DISPATCHER THREAD] [%s] - Received cmd: ##%s##", Thread.currentThread().getName(), cmd));
+            String method = input.readUTF();
+            System.out.println(String.format("[DISPATCHER THREAD] [%s] - Received method: ##%s##", Thread.currentThread().getName(), method));
             int x;
 
-            if (cmd.compareTo("sendCmd") == 0){
+            if (method.compareTo("sendCmd") == 0){
                 x = input.readInt();
                 System.out.println(String.format("[DISPATCHER THREAD] [%s] - received cmd: %d", Thread.currentThread().getName(), x));
                 dispatcher.sendCmd(x);
                 output.writeUTF("OK");
             }
-            else if (cmd.compareTo("getCmd") == 0){
+            else if (method.compareTo("getCmd") == 0){
                 x = dispatcher.getCmd();
                 System.out.println(String.format("[DISPATCHER THREAD] [%s] - extracted cmd: %d", Thread.currentThread().getName(), x));
                 output.writeInt(x);
             } else {
-                System.out.println(String.format("[DISPATCHER THREAD] [%s] - %s is not a valid command!", Thread.currentThread().getName(), cmd));
+                System.out.println(String.format("[DISPATCHER THREAD] [%s] - %s is not a valid command!", Thread.currentThread().getName(), method));
                 output.writeUTF("FAILED");
             }
             output.flush();
