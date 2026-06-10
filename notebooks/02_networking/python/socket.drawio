@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0">
   <diagram name="Pagina-1" id="AOVeD8fuezYmy2qPOm2c">
-    <mxGraphModel dx="1785" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2210" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,7 +52,7 @@
         <mxCell id="QO-lQ_Yn7wriHcoIy37G-16" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fontStyle=1" value="&lt;div&gt;server&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="1692.5" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="ecTTvontJ3zy0z3_LbMG-1" parent="1" style="whiteSpace=wrap;html=1;rounded=1;spacing=2;align=left;fontSize=14;spacingLeft=5;spacingRight=5;" value="&lt;div&gt;&lt;font&gt;with socket.socket(socket_type=socket.AF_INET, socket_family=socket.SOCK_STREAM) as s:&lt;/font&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;b&gt;s.connect()&lt;/b&gt;&lt;/div&gt;&lt;div&gt;s.send(message=(&quot;Hello World!&quot;).encode(&quot;utf-8&quot;))&lt;/div&gt;&lt;div&gt;response = s.recv(bufsize=1024)&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
+        <mxCell id="ecTTvontJ3zy0z3_LbMG-1" parent="1" style="whiteSpace=wrap;html=1;rounded=1;spacing=2;align=left;fontSize=14;spacingLeft=5;spacingRight=5;" value="&lt;div&gt;&lt;font&gt;with socket.socket(socket_type=socket.AF_INET, socket_family=socket.SOCK_STREAM) as s:&lt;/font&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px;&quot;&gt;&lt;div&gt;&lt;b&gt;s.connect(address = (ip, port)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;s.send(message=(&quot;Hello World!&quot;).encode(&quot;utf-8&quot;))&lt;/div&gt;&lt;div&gt;response = s.recv(bufsize=1024)&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
           <mxGeometry height="120" width="612.5" x="-706.25" y="450" as="geometry" />
         </mxCell>
         <mxCell id="ecTTvontJ3zy0z3_LbMG-3" parent="1" style="whiteSpace=wrap;html=1;rounded=1;spacing=2;align=left;fontSize=14;spacingLeft=5;spacingRight=5;" value="&lt;div&gt;&lt;font&gt;with socket.socket(socket_type=socket.AF_INET, socket_family=socket.SOCK_STREAM) as s:&lt;/font&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div&gt;&lt;b&gt;s.bind(address = (ip, port))&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;s.listen(backlog=N)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;conn, addr = s.accept()&lt;/b&gt;&lt;/div&gt;&lt;div&gt;msg = conn.recv(bufsize=1024).decode(&quot;uft-8&quot;)&lt;/div&gt;&lt;div&gt;conn.send(message=(&quot;Hello You!&quot;).encode(&quot;utf-8&quot;))&lt;/div&gt;&lt;/blockquote&gt;" vertex="1">
