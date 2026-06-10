@@ -1,0 +1,34 @@
+2026-06-10 18:50:32,574 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 18:50:32,574 - [33mPress CTRL+C to quit[0m
+2026-06-10 18:50:32,575 -  * Restarting with stat
+2026-06-10 18:50:32,639 -  * Debugger is active!
+2026-06-10 18:50:32,648 -  * Debugger PIN: 950-316-271
+2026-06-10 18:50:47,906 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,908 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,908 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,909 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,910 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,910 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,910 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,910 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,910 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:50:47,911 - 127.0.0.1 - - [10/Jun/2026 18:50:47] "[35m[1mPOST /update_history HTTP/1.1[0m" 500 -
+2026-06-10 18:51:11,914 -  * Detected change in '/Users/angelozarrillo/Angelo/advanced-computer-programming/projects/python/grpc_flask/HistoryManager.py', reloading
+2026-06-10 18:51:11,953 -  * Restarting with stat
+2026-06-10 18:51:12,024 -  * Debugger is active!
+2026-06-10 18:51:12,035 -  * Debugger PIN: 950-316-271
+2026-06-10 18:51:41,173 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,173 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,173 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,174 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,174 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,175 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,175 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,175 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,176 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:51:41,176 - 127.0.0.1 - - [10/Jun/2026 18:51:41] "POST /update_history HTTP/1.1" 200 -
+2026-06-10 18:53:50,106 -  * Detected change in '/Users/angelozarrillo/Angelo/advanced-computer-programming/projects/python/grpc_flask/HistoryManager.py', reloading
+2026-06-10 18:53:50,167 -  * Restarting with stat
+2026-06-10 18:53:50,295 -  * Debugger is active!
+2026-06-10 18:53:50,308 -  * Debugger PIN: 950-316-271

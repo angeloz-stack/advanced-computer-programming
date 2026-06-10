@@ -1,0 +1,20 @@
+syntax="proto3";
+
+package package_manager;
+
+service ProductManager{
+    rpc sell(ProductId) returns (StringMessage);
+    rpc buy(Empty) returns (ProductId);
+}
+
+message Empty{
+
+}
+
+message StringMessage{
+    string value = 1;
+}
+
+message ProductId{
+    int64 id = 1;
+}
