@@ -29,7 +29,9 @@ def apply_discount():
 
     data = request.get_json()
     try:
-        for booking in bookings.find({"operator": data["operator"], "nights": {"$gte": data["nights"]}}):
+        for booking in bookings.find({
+                "operator": data["operator"], 
+                "nights": {"$gte": data["nights"]}}):
             new_cost = max(booking["cost"] - data["discount"], 0)
             logging.info(f"Aggiorno : {booking} - Costo prima: {booking["cost"]}, Costo dopo: {new_cost}")
             bookings.update_one({"_id": booking["_id"]}, {"$set": {"cost": new_cost}})

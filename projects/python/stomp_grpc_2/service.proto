@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package stomp_grpc_2;
+
+service TempertureAlertService{
+    rpc stream_temp(stream Temperature) returns (StringMessage);
+    rpc get_average(Empty) returns (Average);
+}
+
+message Empty {
+
+}
+
+message Temperature{
+    int32 value = 1;
+}
+
+message StringMessage{
+    string value = 1;
+}
+
+message Average{
+    float value = 1;
+}
+

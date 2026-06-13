@@ -12,6 +12,8 @@ class MyProductManagerServicer(service_pb2_grpc.ProductManagerServicer):
     def __init__(self):
         self.queue = []
         self.queue_size = 5
+        # un lock per entrambe le variabili condition
+        # perché la risorsa condivisa è la stessa
         self._lock = threading.Lock()
         self.prod_cond = threading.Condition(self._lock)
         self.cons_cond = threading.Condition(self._lock)
