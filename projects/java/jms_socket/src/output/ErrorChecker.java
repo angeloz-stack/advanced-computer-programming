@@ -52,6 +52,19 @@ public class ErrorChecker implements MessageListener{
             e.printStackTrace();
         }
 
+        /* NOTA SUL FILTRO DEI MESS IN INGRESSO
+        Nella traccia c'è esplicitamente scritto: "il listener JMS di Error Checker estrae il
+        contenuto del messaggio, verifica se esso contiene la stringa ricevuta in input". Se
+        non fosse stato scritto esplicitamente, si sarebbe potuto pensare di applicare un filtro
+        a livello broker, quindi direttamente nel receiver, e.g.:
+                                                                    // sintassi tipo SQL
+        QueueReceiver receiver = session.createReceiver(queue, "messaggioLog LIKE '%fatal%'")
+
+        Questo comportamento, spesso usato per il JMSCorrelationID, in realtà così non è
+        applicabile, perchè messaggioLog È UN CAMPO DI UN MAPMESSAGE E NON è UNA PROPRIETA',
+        QUINDI IL BROKER NON PUOI AVERVI HA ACCESSO!
+        */
+
         if (messaggioLog != null && messaggioLog.contains(msg_to_write)){
             System.out.println(String.format("[ERROR CHECKER] - Scrivo messaggioLog: %s", messaggioLog));
             
