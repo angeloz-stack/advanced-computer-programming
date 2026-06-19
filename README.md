@@ -1,12 +1,26 @@
 # Advanced Computer Programming
 
-Docente: [Raffaele Della Corte](https://www.docenti.unina.it/raffaele.dellacorte2)
+- Docente: [Raffaele Della Corte](https://www.docenti.unina.it/raffaele.dellacorte2)
+- [Repository ufficiale del corso](https://github.com/ACP-unina/acp_materiale/tree/main)
+- Lingua del corso: Italiano
+- Anno accademico: 2025/2026
 
-Lingua del corso: Italiano
+## Struttura della repository
 
-Anno accademico: 2025/2026
+```text
+.
+├── notebooks/
+│   ├── 01_concurrency/
+│   ├── 02_networking/
+│   └── 03_middleware/
+└── projects/
+    ├── java/
+    ├── python/
+    └── java-python/
+```
 
-## 🇮🇹 Italiano
+- `notebooks/` — appunti e teoria organizzati per argomento
+- `projects/` — esercizi svolti, suddivisi per linguaggio (Java, Python, misti Java-Python)
 
 ## Configurazione
 
@@ -49,47 +63,26 @@ Available kernels:
 
 Il necessario per l'installazione si trova [qui](https://activemq.apache.org/components/classic/download/classic-05-16-06)
 
+### Utilizzo di JMS
+1. Individuare `activemq-all-{version}.jar` dai binaries di ActiveMQ (nel nostro caso `activemq-all-5.16.6.jar`)
+2. In un progetto Java con la seguente struttura:
 
-## 🇬🇧 English
+```text
+src/
+bin/
+lib/
+```
 
-## Setup
+3. Copiare il file in `lib/`
 
-### Requirements
-- [uv](https://docs.astral.sh/uv/getting-started/installation/)
-- [Java 11 or newer](https://www.java.com/en/download/help/download_options.html)
-- [VSCode extension](https://marketplace.visualstudio.com/items?itemName=purocean.drawio-preview) for drawio schemes visualization; the official [webapp](https://www.drawio.com/) can be used as well.
-
-### Creating the Python virtual environment
+Dalla cartella del progetto, compilare con:
 ```bash
-# Make sure to have Python 3.13 installed (e.g. via pyenv or uv)
-uv sync
+javac -cp "lib/activemq-all-5.16.6.jar:" -d out $(find src -name "*.java")
 ```
 
-### Installing the Java kernel for Jupyter Notebook
+> Nota sul separator `:` finale in `lib/activemq-all-5.16.6.jar:` — su Mac/Unix i due punti separano le entry del classpath e vanno mantenuti.
 
-1. Download [JJava](https://github.com/dflib/jjava): go to [GitHub releases](https://github.com/dflib/jjava/releases), pick the latest version (or a specific one that you need) and under the "Assets" section download a file called `jjava-${version}-kernelspec.zip`
-2. Unzip the file into a temporary location (e.g. `path/to/tmp_folder/`)
-3. Run the following commands from the repo directory:
-
+Per eseguire:
 ```bash
-cd path/to/advanced-computer-programming
-
-uv run jupyter kernelspec install path/to/tmp_folder/jjava-${version}-kernelspec --user --name=java
+java -cp "lib/activemq-all-5.16.6.jar:out" nome_package.nome_file *args
 ```
-
-#### Verify installation
-```bash
-uv run jupyter kernelspec list
-```
-
-The output should be something like this:
-```
-Available kernels:
-  python3    path/to/advanced-computer-programming/.venv/share/jupyter/kernels/python3
-  java       /home/angelo/.local/share/jupyter/kernels/java
-```
-
-### Installazione di ActiveMQ
-All the exercises that involve messages require the MOM middleware ActiveMQ, version 5.16.6. 
-
-Everything needed for the installation can be accessed [here](https://activemq.apache.org/components/classic/download/classic-05-16-06).
