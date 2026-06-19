@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+service Analyzer {
+    rpc analyze(stream Reading) returns (StringMessage);
+    rpc get_stats(Empty) returns (Stats);
+}
+
+message Empty {
+
+}
+
+message StringMessage {
+    string value = 1;
+}
+
+message Reading {
+    int64 meterId = 1;
+    string zone = 2;
+    int64 reading = 3;
+}
+
+message Stats {
+    int64 n_total_readings = 1;
+    float avg = 2;
+}
